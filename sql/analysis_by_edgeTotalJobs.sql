@@ -7,5 +7,5 @@ SELECT 'Loans', SUM(projectednewjobs + projectedretainedjobs) FROM edge_loans
 UNION ALL
 SELECT 'Bonds', SUM(projectedtotaljobs) FROM edge_bonds
 UNION ALL
-SELECT 'Grant', SUM(projectedtotaljobs) FROM edge_otherprojects; 
+SELECT 'Other', SUM(projectedtotaljobs) FROM edge_otherprojects; 
 
