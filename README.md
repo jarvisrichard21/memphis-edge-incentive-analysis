@@ -21,33 +21,13 @@ How are EDGE-supported projects distributed across Memphis ZIP codes, and what d
 These questions structure the entire analysis and help translate raw data into meaningful insight.
 
 # Project Structure
+
 memphis-edge-incentive-analysis/
 │
-├── data/
-│   ├── raw/                     # Original datasets from EDGE
-│   ├── cleaned/                 # Cleaned and standardized CSVs
-│   └── documentation/           # ERD image and data_model.md
-│
-├── sql/
-│   ├── schema/
-│   │   └── create_tables.sql    # Database schema definitions
-│   │
-│   ├── cleaning/
-│   │   └── cleaning.sql         # SQL-based cleaning and transformations
-│   │
-│   └── analysis/
-│       ├── investment/          # Investment-related SQL queries
-│       ├── jobs/                # Job-related SQL queries
-│       └── geography/           # ZIP code and geographic queries
-│
-├── insights/
-│   ├── research_questions.md    # Core analytical questions
-│   ├── findings.md              # Narrative insights and conclusions
-│   │
-│   ├── outputs/                 # CSV outputs generated from SQL queries
-│   └── visuals/                 # Charts, maps, and tables
-│
-└── README.md                    # Main project overview
+├── data/          # Raw data, cleaned data, and data documentation
+├── sql/           # Schema, cleaning, and analysis SQL scripts
+├── insights/      # Research questions, findings, outputs, and visuals
+└── README.md      # Main project overview│
 # Tools Used
 * PostgreSQL for database design and analysis
 * SQL for cleaning, transformation, and exploratory queries
