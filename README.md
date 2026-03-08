@@ -4,10 +4,10 @@ I spent five months working through the full lifecycle of this project—data co
 
 # Project Purpose
 Memphis’s EDGE incentives represent millions of dollars in public–private partnerships. These programs affect:
-• 	where businesses choose to locate
-• 	how many jobs are created
-• 	which neighborhoods receive investment
-• 	how industries grow over time
+* where businesses choose to locate
+* how many jobs are created
+* which neighborhoods receive investment
+* how industries grow over time
 This analysis provides a structured, data-driven look at those patterns. As a Memphian, I wanted to understand how these incentives impact the city I live in and how they shape long-term economic development.
 
  # Key Questions
@@ -21,35 +21,42 @@ How are EDGE-supported projects distributed across Memphis ZIP codes, and what d
 These questions structure the entire analysis and help translate raw data into meaningful insight.
 
 # Project Structure
-memphis-edge-analysis/
+memphis-edge-incentive-analysis/
 │
 ├── data/
-│   ├── raw/                # Original datasets from EDGE
-│   ├── cleaned/            # Cleaned and standardized CSVs
-│   └── documentation/      # ERD Data Model, Data_model.md
+│   ├── raw/                     # Original datasets from EDGE
+│   ├── cleaned/                 # Cleaned and standardized CSVs
+│   └── documentation/           # ERD image and data_model.md
 │
 ├── sql/
-│   ├── create_tables.sql   # Database schema
-│   ├── cleaning.sql        # Data cleaning and transformation
-│   └── analysis.sql        # Queries used for EDA and insights
+│   ├── schema/
+│   │   └── create_tables.sql    # Database schema definitions
+│   │
+│   ├── cleaning/
+│   │   └── cleaning.sql         # SQL-based cleaning and transformations
+│   │
+│   └── analysis/
+│       ├── investment/          # Investment-related SQL queries
+│       ├── jobs/                # Job-related SQL queries
+│       └── geography/           # ZIP code and geographic queries
 │
-├── analysis/
-│   ├── research_questions.md
-│   ├── findings.md
-│   └── visuals/            # Charts, maps, and tables
+├── insights/
+│   ├── research_questions.md    # Core analytical questions
+│   ├── findings.md              # Narrative insights and conclusions
+│   │
+│   ├── outputs/                 # CSV outputs generated from SQL queries
+│   └── visuals/                 # Charts, maps, and tables
 │
-│
-└── README.md
-
+└── README.md                    # Main project overview
 # Tools Used
-• 	PostgreSQL for database design and analysis
-• 	SQL for cleaning, transformation, and exploratory queries
-• 	Datawrapper for mapping and visualization
-• 	Excel for initial inspection and quick checks
+* PostgreSQL for database design and analysis
+* SQL for cleaning, transformation, and exploratory queries
+* Datawrapper for mapping and visualization
+* Excel for initial inspection and quick checks
 
 # Acknowledgments
-• 	Sergio Ramos — for his public data work on Fort Worth building permits, which inspired this project’s structure and storytelling.
-• 	City of Memphis Office of Performance Management — for providing access to the EDGE datasets.
+* Sergio Ramos — for his public data work on Fort Worth building permits, which inspired this project’s structure and storytelling.
+* City of Memphis Office of Performance Management — for providing access to the EDGE datasets.
 
 # Summary
 This project is a deep dive into how Memphis uses financial incentives to support economic development. It combines civic data, SQL analysis, and visual storytelling to highlight patterns that matter to business leaders, policymakers, and residents.
