@@ -27,6 +27,7 @@ These questions structure the entire analysis and help translate raw data into m
   <ul>
     <li><strong>memphis-edge-incentive-analysis/</strong>
       <ul>
+
         <li><strong>data/</strong>
           <ul>
             <li><strong>cleaned/</strong> — Cleaned and standardized CSVs used for analysis</li>
@@ -71,6 +72,7 @@ These questions structure the entire analysis and help translate raw data into m
         </li>
 
         <li><strong>README.md</strong> — Main project overview</li>
+
       </ul>
     </li>
   </ul>
