@@ -21,33 +21,61 @@ How are EDGE-supported projects distributed across Memphis ZIP codes, and what d
 These questions structure the entire analysis and help translate raw data into meaningful insight.
 
 # Project Structure
-* 	memphis-edge-incentive-analysis/
-  * 	data/
-* cleaned/
-	* Cleaned and standardized CSVs
-* documentation/
-  * data_model.md-Data dictionary and field definitions
-   * ERD diagram
-* sql/
-  * schema/
-    * create_tables.sql — Database schema definitions
-* cleaning/
-   * cleaning.sql— SQL-based cleaning and transformations
-* analysis/
-     * investment/ — SQL queries analyzing capital investment patterns
-     * jobs/ — SQL queries analyzing job creation commitments
-    * geography/ — ZIP code and geographic distribution queries
-* insights/
-   * research_questions.md- Core analytical questions guiding the project
-   * findings.md- Narrative insights and conclusions
-* outputs/
-   * CSV outputs generated from SQL queries
-* visuals/
-   * Charts, maps, and tables used in the analysis
-* README.md — Main project overview
+<details>
+  <summary><strong>Click to expand project structure</strong></summary>
 
+  <ul>
+    <li><strong>memphis-edge-incentive-analysis/</strong>
+      <ul>
+        <li><strong>data/</strong>
+          <ul>
+            <li><strong>cleaned/</strong> — Cleaned and standardized CSVs used for analysis</li>
+            <li><strong>documentation/</strong>
+              <ul>
+                <li><code>data_model.md</code> — Data dictionary and field definitions</li>
+                <li>ERD diagram</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
+        <li><strong>sql/</strong>
+          <ul>
+            <li><strong>schema/</strong>
+              <ul>
+                <li><code>create_tables.sql</code> — Database schema definitions</li>
+              </ul>
+            </li>
+            <li><strong>cleaning/</strong>
+              <ul>
+                <li><code>cleaning.sql</code> — SQL-based cleaning and transformations</li>
+              </ul>
+            </li>
+            <li><strong>analysis/</strong>
+              <ul>
+                <li><strong>investment/</strong> — Capital investment analysis queries</li>
+                <li><strong>jobs/</strong> — Job creation analysis queries</li>
+                <li><strong>geography/</strong> — ZIP code and geographic distribution queries</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
+        <li><strong>insights/</strong>
+          <ul>
+            <li><code>research_questions.md</code> — Core analytical questions</li>
+            <li><code>findings.md</code> — Narrative insights and conclusions</li>
+            <li><strong>outputs/</strong> — CSV outputs generated from SQL queries</li>
+            <li><strong>visuals/</strong> — Charts, maps, and tables</li>
+          </ul>
+        </li>
+
+        <li><strong>README.md</strong> — Main project overview</li>
+      </ul>
+    </li>
+  </ul>
+
+</details>
 
 
 # Tools Used
